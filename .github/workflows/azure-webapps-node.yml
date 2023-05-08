@@ -41,8 +41,7 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm test
+    - run: ls -la
 
     - name: npm install, build, and test
       run:
